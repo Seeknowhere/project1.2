@@ -60,7 +60,7 @@ video {
     align-items: center;
     height: 90vh;
     overflow: hidden;
-    background-color: #62aec5;
+    background-color: #c2dfdd;
 }
 .img-collage img{
     margin: 10px;
@@ -473,7 +473,7 @@ padding: 1em;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
 
     /*text*/
-    padding: 5em;
+    padding: 3em;
     color: #ddd;
     align-content: center;
     justify-content: space-evenly;
@@ -488,9 +488,83 @@ padding: 1em;
 .text a{
     color: #ddd;
     font-weight: bold;
-    font-size: 3vmin;   
+    font-size: 1.5vmin;   
 }
+
+/* NEWS */
+.news-top-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:baseline;
+    position: relative;
+    min-height: 80%;
+}
+.news-top-container h2{
+    flex:0.2;
+}
+.news-nav ul {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+.news-nav li {
+    padding:1em;
+}
+.news-nav a{
+    display: block; /* or inline-block */
+    width: 10em;
+    text-align: center;
+    background-color: rgb(164, 162, 162, 0.3);
+    color: black;
+    border-radius: 50px;
+    padding:5px 10px;
+    cursor: pointer;
+    font-size: 1vmin;
   
+    
+}
+.news-nav a.active {
+    background-color: #62aec5;
+    color: whitesmoke;  
+}
+.news-items img{ 
+    width: 30em;
+    height:20em;
+    border-color: #c2dfdd;
+    border-style:solid;
+    border-width: 20px;
+}
+.news-items p {
+    font-size: 1.5vmin;
+}
+.newsdate-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    justify-content: flex-start;
+    
+}
+.newsdate-div p {
+    font-size: 2vmin;
+    color: #62aec5;
+    font-weight: bold;
+    padding-right:20px;
+}
+.newsdate-div a {
+    display: block; /* or inline-block */
+    width: 8em;
+    text-align: center;
+    background-color: #62aec5;
+    color: white;
+    padding:5px 10px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1vmin;
+    
+}
 
 
 /* MOBILE DEVICE */
@@ -518,6 +592,7 @@ padding: 1em;
     .grid-container-2 {
         grid-template-columns: 1fr;
     }
+    /*News*/
   
 }
 @media screen and (max-width: 400px) {
