@@ -16,4 +16,24 @@ function carousel() {
 }
 
 
-/*          */
+/*     fade in    */
+window.addEventListener('scroll',() => {
+  let content = document.querySelectorAll('.fade-in');
+  let contentPosition;
+  content.forEach( fadeInContent=> {
+    contentPosition = fadeInContent.getBoundingClientRect().top;
+  })
+  let screenPosition = window.innerHeight/3;
+  
+  if(contentPosition < screenPosition){
+    fadeInContent.classList.add('active');
+  }else{
+    fadeInContent.classList.remove('active');
+  }
+})
+
+/* slide in left*/
+
+
+
+

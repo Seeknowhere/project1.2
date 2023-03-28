@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+   
    
 </head>
 <body>
@@ -24,7 +26,7 @@
     <div class="main-container">
         <div class="main">
             <div class="news-top-container">
-                <h2 class="font-blue"style="">NEWS</h2>
+                <h2 class="font-blue"style=""data-aos="slide-right">NEWS</h2>
                 <div class="news-nav">
                     <ul>
                         <li><a href="" class="active">ALL</a> </li>
@@ -132,4 +134,11 @@
     </div> -->
 </body>
 <script src="assets/js/script.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 2000,
+        once: true,
+    });
+</script>
 </html>

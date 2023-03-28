@@ -5,6 +5,9 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
 }
+html {
+    scroll-behavior: smooth;
+}
 li {
     list-style: none !important;
 }
@@ -53,20 +56,42 @@ video {
     width: 100%;
     object-fit: cover;
 }
+/** collage **/
+
 .img-collage {
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     justify-content: center;
     align-items: center;
     height: 90vh;
     overflow: hidden;
     background-color: #c2dfdd;
+    position: relative;
 }
 .img-collage img{
     margin: 10px;
-    max-width: 20%;
-    height:40%;
+    max-width: 12%;
+    height: 100%;
+    
 }
+.img-back, .char-img {
+    position: absolute;
+    left: 15%;
+}
+.img-back {
+
+    padding: 20px;
+    height: 60%;
+}
+
+.char-img {
+    z-index:1;
+    padding: 20px;
+    height:60%;
+    bottom: 1%;
+    
+}
+/** **/
 .content {
     align-items: center;
     justify-content: center;
@@ -567,7 +592,7 @@ padding: 1em;
 }
 
 
-/* MOBILE DEVICE */
+/********* MOBILE DEVICE *************/
 @media screen and (max-width: 700px) {
     .main-container {
         margin: auto -100px;
