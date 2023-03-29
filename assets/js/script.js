@@ -15,22 +15,29 @@ function carousel() {
   setTimeout(carousel, 2000); // Change image every 2 seconds
 }
 
+/**** MENU TOGGLE ******/
+function classToggle() {
+  const navs = document.querySelectorAll('.navbar-links')
+  navs.forEach(nav => nav.classList.toggle('show'));
+}
+
+
 
 /*     fade in    */
-window.addEventListener('scroll',() => {
-  let content = document.querySelectorAll('.fade-in');
-  let contentPosition;
-  content.forEach( fadeInContent=> {
-    contentPosition = fadeInContent.getBoundingClientRect().top;
-  })
-  let screenPosition = window.innerHeight/3;
+// window.addEventListener('scroll',() => {
+//   let content = document.querySelectorAll('.fade-in');
+//   let contentPosition;
+//   content.forEach( fadeInContent=> {
+//     contentPosition = fadeInContent.getBoundingClientRect().top;
+//   })
+//   let screenPosition = window.innerHeight/3;
   
-  if(contentPosition < screenPosition){
-    fadeInContent.classList.add('active');
-  }else{
-    fadeInContent.classList.remove('active');
-  }
-})
+//   if(contentPosition < screenPosition){
+//     fadeInContent.classList.add('active');
+//   }else{
+//     fadeInContent.classList.remove('active');
+//   }
+// })
 
 /* slide in left*/
 
