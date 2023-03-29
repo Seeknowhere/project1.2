@@ -115,7 +115,7 @@ video {
 .content {
     align-items: center;
     justify-content: center;
-    width: 50%;
+    width: 55vw;
     margin: 5% auto;
     overflow: hidden;
 }
