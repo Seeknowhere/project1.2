@@ -251,7 +251,7 @@ hr {
 
 /* WORKS PAGE */
 .works-body {
-    display: inline-block;
+    display: block;
     flex-wrap: nowrap;
     /* margin: 0 -10px; */
 }
