@@ -91,8 +91,7 @@ video {
 .img-collage img{
     margin: 10px;
     max-width: 12%;
-    height: 100%;
-    
+    height: auto;
 }
 .img-back, .char-img {
     position: absolute;
@@ -115,7 +114,7 @@ video {
 .content {
     align-items: center;
     justify-content: center;
-    width: 55vw;
+    width: 60vw;
     margin: 5% auto;
     overflow: hidden;
 }
@@ -124,10 +123,9 @@ video {
     flex-wrap: wrap;
     justify-content: center;
     box-sizing: border-box;
-    
 }
 .col-50{
-    flex-basis: calc(50% - 30px); 
+    flex-basis: calc(50% - 30px);
     /* background-color: whitesmoke; */
     padding: 20px;
     margin-right: 10px; /* Space between columns */
@@ -171,16 +169,15 @@ video {
 }
 
 .works-img {
-    width: 30em;
-    height:20em;
-
+    width: 28vw;
+    height: auto;
 }
 .company-img {
-    margin-left: -30%;
-    width: 80%;
-    height:80%;
+    margin-left: -15%;
+    width: 450px;
+    height: 450px;
     z-index:1;
- 
+    border-radius: 50%;
 }
 .circle {
     display: flex;
@@ -190,13 +187,13 @@ video {
     background-color: #e64072;
     margin-top:5%;
     margin-left: -5%;
-    z-index: 0;
-    width:80%;
-    max-width:500px;
-    max-height:500px;
+    z-index: 1;
+    /* width:80%; */
+    width: 300px;
+    height: 300px;
 }
 .circle ul {
-    padding:4em;
+    padding: 3em;
 }
 .circle li {
     padding:0.4em;
@@ -204,6 +201,8 @@ video {
 .circle a{
     color: white;
 }
+
+.circle p{margin:0;font-size: 0.9vw;font-weight: 600;}
 
 hr {
     border-color:#62aec5;
@@ -429,6 +428,11 @@ hr {
 
 .works-rows {
     /* display: flex; */
+}
+
+.works-rows .col-50 {
+    padding: 1vw;
+    margin: 0;
 }
 
 /*~~~~~~~~~~~~~~~~~~~~~~ WORKS PAGE ~~~~~~~~~~~~~~~~~~~*/
